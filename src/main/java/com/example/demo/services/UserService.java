@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.domain.User;
+import com.example.demo.dto.UserDTO;
 import com.example.demo.repository.UserReporsitory;
 import com.example.demo.services.exception.ObjectNotFoundException;
 
@@ -26,5 +27,19 @@ public class UserService {
 		Optional<User> user = userReporsitory.findById(id);
 		return user.orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado"));
 	}
+	
+	public User Insert(User obj) {
+		return userReporsitory.insert(obj);
+	}
+	
+	public void delete(String id) {
+		findById(id);
+		userReporsitory.deleteById(id);
+	}
+	
+	public User fromDTO(UserDTO objDto) {
+		return new User(objDto.getId(), objDto.getName(), objDto.getEmail());
+	}
+	
 	
 }
