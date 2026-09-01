@@ -1,4 +1,4 @@
-package com.example.demo.domain;
+package com.svitinhoo.workshopmongo.domain;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -9,8 +9,8 @@ import java.util.Objects;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import com.example.demo.dto.AuthorDTO;
-import com.example.demo.dto.CommentsDTO;
+import com.svitinhoo.workshopmongo.dto.AuthorDTO;
+import com.svitinhoo.workshopmongo.dto.CommentsDTO;
 
 @Document
 public class Post implements Serializable {

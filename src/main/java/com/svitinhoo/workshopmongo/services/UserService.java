@@ -1,21 +1,21 @@
-package com.example.demo.services;
+package com.svitinhoo.workshopmongo.services;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import com.example.demo.domain.User;
-import com.example.demo.dto.UserDTO;
-import com.example.demo.repository.UserReporsitory;
-import com.example.demo.services.exception.ObjectNotFoundException;
+import com.svitinhoo.workshopmongo.domain.User;
+import com.svitinhoo.workshopmongo.dto.UserDTO;
+import com.svitinhoo.workshopmongo.repository.UserRepository;
+import com.svitinhoo.workshopmongo.services.exception.ObjectNotFoundException;
 
 @Service
 public class UserService {
 
-	private final UserReporsitory userReporsitory;
+	private final UserRepository userReporsitory;
 
-	UserService(UserReporsitory userReporsitory) {
+	UserService(UserRepository userReporsitory) {
 		this.userReporsitory = userReporsitory;
 	}
 

@@ -1,4 +1,4 @@
-package com.example.demo.resources;
+package com.svitinhoo.workshopmongo.resources;
 
 
 
@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.domain.Post;
-import com.example.demo.resources.util.URL;
-import com.example.demo.services.PostService;
+import com.svitinhoo.workshopmongo.domain.Post;
+import com.svitinhoo.workshopmongo.resources.util.URL;
+import com.svitinhoo.workshopmongo.services.PostService;
 
 
 @RestController

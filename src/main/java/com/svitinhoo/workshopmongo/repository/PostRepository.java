@@ -1,4 +1,4 @@
-package com.example.demo.repository;
+package com.svitinhoo.workshopmongo.repository;
 
 import java.util.Date;
 import java.util.List;
@@ -6,9 +6,9 @@ import java.util.List;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 
-import com.example.demo.domain.Post;
+import com.svitinhoo.workshopmongo.domain.Post;
 
-public interface PostReporsitory extends MongoRepository<Post, String>{
+public interface PostRepository extends MongoRepository<Post, String>{
 	
 	List<Post> findByTitleContainingIgnoreCase(String text);
 	

@@ -1,4 +1,4 @@
-package com.example.demo.resources;
+package com.svitinhoo.workshopmongo.resources;
 
 import java.net.URI;
 import java.util.List;
@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.example.demo.domain.Post;
-import com.example.demo.domain.User;
-import com.example.demo.dto.UserDTO;
-import com.example.demo.services.UserService;
+import com.svitinhoo.workshopmongo.domain.Post;
+import com.svitinhoo.workshopmongo.domain.User;
+import com.svitinhoo.workshopmongo.dto.UserDTO;
+import com.svitinhoo.workshopmongo.services.UserService;
 
 
 @RestController

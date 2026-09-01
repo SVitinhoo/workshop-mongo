@@ -1,4 +1,4 @@
-package com.example.demo.services;
+package com.svitinhoo.workshopmongo.services;
 
 import java.util.Date;
 import java.util.List;
@@ -6,16 +6,16 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import com.example.demo.domain.Post;
-import com.example.demo.repository.PostReporsitory;
-import com.example.demo.services.exception.ObjectNotFoundException;
+import com.svitinhoo.workshopmongo.domain.Post;
+import com.svitinhoo.workshopmongo.repository.PostRepository;
+import com.svitinhoo.workshopmongo.services.exception.ObjectNotFoundException;
 
 @Service
 public class PostService {
 
-	private final PostReporsitory repo;
+	private final PostRepository repo;
 
-	PostService(PostReporsitory repo) {
+	PostService(PostRepository repo) {
 		this.repo = repo;
 	}
 	

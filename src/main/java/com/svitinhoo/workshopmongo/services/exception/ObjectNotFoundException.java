@@ -1,4 +1,4 @@
-package com.example.demo.services.exception;
+package com.svitinhoo.workshopmongo.services.exception;
 
 public class ObjectNotFoundException extends RuntimeException {
 

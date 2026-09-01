@@ -1,4 +1,4 @@
-package com.example.demo.config;
+package com.svitinhoo.workshopmongo.config;
 
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
@@ -7,20 +7,20 @@ import java.util.TimeZone;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 
-import com.example.demo.domain.Post;
-import com.example.demo.domain.User;
-import com.example.demo.dto.AuthorDTO;
-import com.example.demo.dto.CommentsDTO;
-import com.example.demo.repository.PostReporsitory;
-import com.example.demo.repository.UserReporsitory;
+import com.svitinhoo.workshopmongo.domain.Post;
+import com.svitinhoo.workshopmongo.domain.User;
+import com.svitinhoo.workshopmongo.dto.AuthorDTO;
+import com.svitinhoo.workshopmongo.dto.CommentsDTO;
+import com.svitinhoo.workshopmongo.repository.PostRepository;
+import com.svitinhoo.workshopmongo.repository.UserRepository;
 
 @Configuration
 public class Instantiation implements CommandLineRunner {
 
-	private final UserReporsitory userRepository;
-	private final PostReporsitory postRepository;
+	private final UserRepository userRepository;
+	private final PostRepository postRepository;
 
-	Instantiation(UserReporsitory userRepository, PostReporsitory postRepository) {
+	Instantiation(UserRepository userRepository, PostRepository postRepository) {
 		this.userRepository = userRepository;
 		this.postRepository = postRepository;
 	}

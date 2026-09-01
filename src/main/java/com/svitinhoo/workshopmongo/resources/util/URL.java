@@ -1,4 +1,4 @@
-package com.example.demo.resources.util;
+package com.svitinhoo.workshopmongo.resources.util;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
